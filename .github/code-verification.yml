@@ -14,6 +14,8 @@ jobs:
       - name: Install dependencies
         run: |
           pip install pylint pytest safety
+          pip install -r rerequirements.txt
+          pip install -r rerequirements-dev.txt
 
       - name: Run Pylint (Code Style Check)
         run: |
